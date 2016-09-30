@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+
+  </head>
+  <body>
+
+<section class="column">
+<h1 class="row small-12 large-6">Amazing Landing Page</h1>
+<img src="image/1836582_10152195105420239_489514137_o.jpg" alt="" class="row small-12 large-12" />
+
+</section>
+
+<section>
+  Welcome to Mateo Fowler's page. I just wanted to say: <span id="greeting">hello!</span>
+</section>
+
+<script type="text/javascript">
+  var myDate = new Date();
+  var myHour = myDate.getHours();
+  /* The line above creates a Date() object in the browser and assigns it to the variable called myDate*/
+
+  if ( myHour < 12 ) {
+document.getElementById('greeting').innerHTML = "Good Morning!";
+  }
+  if ( myHour <= 17 ) {
+document.getElementById('greeting').innerHTML = "Good Afternoon!";
+  }
+  if ( myHour <= 24 ) {
+document.getElementById('greeting').innerHTML = "Good Evening!";
+  console.log("line 34 say hello");}
+
+</script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
