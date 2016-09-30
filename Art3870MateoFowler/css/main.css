@@ -1,0 +1,20 @@
+*{
+  border:1px solid purple;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#greeting{color:green}
+
+*{
+  header:40px solid orange;
+  font-family: 'David Libre', serif;
+}
+
+*{
+  image-orientation:
+  height: 600px;
+  width:1600px;
+  -moz-border-radius: 2000px 1000px / 1000px 2000px;
+  border-radius: 2000px 1000px / 1000px 2000px;
+  image-resolution: from-image;
+}
