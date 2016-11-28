@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Landing Page</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=David+Libre">
+
+  </head>
+  <body>
+
+<section class="rowmask">
+<h1 class="colmid small-6 large-6">Amazing Landing Page</h1>
+</section>
+<section class="rowmask">
+  <img src="image/1836582_10152195105420239_489514137_o.jpg" alt="" class="colmid small-2 large-12" />
+</section>
+
+<section>
+
+</section>
+<section>
+  Welcome to Mateo Fowler's page. I just wanted to say: <span id="greeting">hello!</span>
+</section>
+
+<section class="colmid small-2 large-12">
+    <iframe src="https://docs.google.com/presentation/d/1-n8w3QJoDC2anMp1BlRE3QFJzacSwOTpRXfRrgqNTFE/embed?start=false&loop=false&delayms=15000" frameborder="0" width="400" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</section>
+
+<section>
+<ul>Check out the full Sun Gallery website <a href="sungalleryredesign-gigabite/index.html" target="_blank">here</a>.</ul>
+</section>
+
+<section>
+<ul>Check out the full my skill at animation thru coding <a href="Animation/Walker.html" target="_blank">here</a>.</ul>
+</section>
+
+<script type="text/javascript">
+  var myDate = new Date();
+  var myHour = myDate.getHours();
+  /* The line above creates a Date() object in the browser and assigns it to the variable called myDate*/
+
+  if ( myHour < 12 ) {
+document.getElementById('greeting').innerHTML = "Good Morning!";
+  }
+  if (myDate.getHours ()>= 12 &&  myDate.getHours() <= 17)  {
+document.getElementById('greeting').innerHTML = "Good Afternoon!";
+  }
+  if (myDate.getHours ()>= 17 && myDate.getHours() <= 24) {
+document.getElementById('greeting').innerHTML = "Good Evening!";
+  console.log("line 34 say hello");}
+
+</script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
