@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400,900);
+
+$layers : 20;
+$scale-factor : 0.1;
+body {
+  background: #9B59B6;
+}
+main {
+  height: 100vh;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: 1px;
+  text-align: center;
+  will-change: scroll-position;
+}
+div[id^="fig"]{
+  border: 0 solid red;
+  border-radius: 50%;
+  opacity: 0.5;
+   filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+div[id^="fig3"]{
+  border: 0 solid yellow;
+  border-radius: 60%;
+  opacity: 0.6;
+   filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  font: 100 15vmin/30vh Lato, sans-serif;
+  padding: 100vh 0 100vh;
+  line-height: 100vh;
+
+
+
+  &:after { content: "Under Water!"; }
+
+
+}
+section:nth-child(11) {
+  -webkit-transform: translateZ(-11px) scale(12);
+          transform: translateZ(-11px) scale(12);
+  color: #0900ff;
+}
+
+  @for $i from 1 through $layers {
+    &:nth-child(#{$i}) {
+      transform:
+        translateZ(#{-$i*1px});
+        scale($i+1);
+      $hue : $i*22deg;
+      $color : hsl($hue, 100%, 50%);
+      color: $color;
+    }
+  }
+}

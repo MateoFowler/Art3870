@@ -1,0 +1,51 @@
+.fish {
+  width: 200px;
+  height: 100px;
+  background: #00ff91;
+  -moz-border-radius: 100px/50px;
+  -webkit-border-radius: 100px/50px;
+  border-radius: 100px/50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes swim {
+  0%, 100% {
+    top: 0px;
+    left: 0px;
+    transform: rotateY(180deg);
+  }
+  25% {
+    top: 2500px;
+    left: 2500px;
+    transform: rotateY(180deg);
+  }
+  50% {
+    top: 3000px;
+    left: 3000px;
+    transform: rotateY(0deg);
+  }
+  75% {
+    top: 0px;
+    left: 0px;
+    transform: rotateY(0deg);
+  }
+}
+.tail {
+  position: absolute;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #00ff91;
+  border-bottom: 50px solid transparent;
+}
+
+.fish {
+animation: 10s swim infinite linear;
+}
+
+.fish2 {
+animation: 20s swim infinite linear;
+}

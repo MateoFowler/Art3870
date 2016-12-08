@@ -1,0 +1,110 @@
+.title {
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: #2efc71;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 100px;
+  border: 0 solid white;
+  border-radius: 60%;
+  opacity: 0.6;
+   filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.animate {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100px;
+  width: 100px;
+  background: #2efc71;
+  margin-top: 50vh;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          border: 0 solid white;
+          border-radius: 95%;
+          opacity: 0.4;
+           filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.fun {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  height: 10000px;
+  background: -webkit-linear-gradient(45deg, #3498db 0%, #2ecc71 50%, #3498db 100%);
+  background: linear-gradient(45deg, #3498db 0%, #2ecc71 50%, #3498db 100%);
+}
+
+.fly-in {
+  height: 200px;
+  width: 200px;
+  background: #2efc71;
+  margin: 200px auto;
+  border: 0 solid white;
+  border-radius: 95%;
+  opacity: 0.4;
+   filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.fly-in.right {
+  -webkit-transform: translate(100vw, -50vh);
+          transform: translate(100vw, -50vh);
+}
+.fly-in.left {
+  -webkit-transform: translate(-100vw, -50vh);
+          transform: translate(-100vw, -50vh);
+}
+
+.tilt-container, .spread-container {
+  margin: 300px 0;
+  position: relative;
+}
+.tilt-container .fly-in, .spread-container .fly-in {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  /* transition: 1s ease; */
+  -webkit-transform: perspective(600px);
+          transform: perspective(600px);
+}
+
+.stripe-container {
+  margin: 100vh 0 100px;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+.stripe-container .grow {
+  height: 100%;
+  position: absolute;
+  width: 10vw;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.stripe-container .stripe {
+  width: 100vw;
+  height: 100%;
+  background: -webkit-linear-gradient(45deg, #2eac71 0%, #2efc71 100%);
+  background: linear-gradient(45deg, #2eac71 0%, #2efc71 100%);
+  border-radius: 95%;
+  opacity: 0.4;
+   filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.fade-in {
+  margin-top: 300px;
+  opacity: 0;
+}

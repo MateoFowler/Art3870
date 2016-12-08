@@ -1,0 +1,193 @@
+body {
+  background: #000;
+}
+
+.center {
+  -webkit-transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+          transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+
+.left {
+  -webkit-transform: translate(calc(-55% + 65vw), calc(65% + 405vh));
+          transform: translate(calc(-55% + 65vw), calc(65% + 405vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+
+.center2 {
+  -webkit-transform: translate(calc(-50% + 50vw), calc(-28% + 305vh));
+          transform: translate(calc(-50% + 50vw), calc(-28% + 305vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+
+.right {
+  -webkit-transform: translate(calc(-10% + 55vw), calc(58% + 505vh));
+          transform: translate(calc(-10% + 55vw), calc(58% + 505vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+
+.left2 {
+  -webkit-transform: translate(calc(-55% + 65vw), calc(65% + 605vh));
+          transform: translate(calc(-55% + 65vw), calc(65% + 605vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+
+.right2 {
+  -webkit-transform: translate(calc(-10% + 45vw), calc(58% + 805vh));
+          transform: translate(calc(-10% + 45vw), calc(58% + 805vh));
+  -webkit-filter: contrast(5);
+          filter: contrast(5);
+}
+.loader {
+  background: #000;
+  font-size: 2px;
+  padding: 4px;
+  text-align: center;
+  position: relative;
+  width: 3px;
+}
+
+.text {
+  -webkit-animation: b 5s infinite;
+          animation: b 5s infinite;
+  color: #05d0c1;
+  font-size: 210px;
+  font-family: "Cutive Mono";
+  line-height: 105px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+
+.text2 {
+  -webkit-animation: b 12s infinite;
+          animation: b 12s infinite;
+  color: #05d0c1;
+  font-size: 30px;
+  font-family: "Cutive Mono";
+  line-height: 10px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  top: 2px;
+}
+
+.dot {
+  border-radius: 0;
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  height: 2px;
+  width: 2px;
+}
+.dot:first-child {
+  -webkit-animation: fc 10s ease infinite;
+          animation: fc 10s ease infinite;
+  float: left;
+}
+.dot:last-child {
+  -webkit-animation: lc 10s ease infinite;
+          animation: lc 10s ease infinite;
+  margin-left: -20px;
+}
+
+@-webkit-keyframes fc {
+  0% {
+    background: #ddf;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    background: #1d2;
+  }
+  50% {
+    background: #aaf;
+    -webkit-transform: translate3d(180px, 0, 0);
+            transform: translate3d(180px, 0, 0);
+  }
+  100% {
+    background: #ddf;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fc {
+  0% {
+    background: #ddf;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    background: #1d2;
+  }
+  50% {
+    background: #aaf;
+    -webkit-transform: translate3d(180px, 0, 0);
+            transform: translate3d(180px, 0, 0);
+  }
+  100% {
+    background: #ddf;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes lc {
+  0% {
+    background: #3fd;
+  }
+  25% {
+    background: #4df;
+  }
+  50% {
+    background: #12d;
+  }
+  75% {
+    background: #4df;
+  }
+  100% {
+    background: #3fd;
+  }
+}
+@keyframes lc {
+  0% {
+    background: #3fd;
+  }
+  25% {
+    background: #4df;
+  }
+  50% {
+    background: #12d;
+  }
+  75% {
+    background: #4df;
+  }
+  100% {
+    background: #3fd;
+  }
+}
+@-webkit-keyframes b {
+  0%, 100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  50% {
+    -webkit-filter: blur(1.5px);
+            filter: blur(1.5px);
+  }
+}
+@keyframes b {
+  0%, 100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  50% {
+    -webkit-filter: blur(1.5px);
+            filter: blur(1.5px);
+  }
+}
